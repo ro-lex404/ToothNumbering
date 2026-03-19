@@ -1,0 +1,54 @@
+# 1. Path to your dataset root
+path: /kaggle/input/datasets/rohanalexbimal/tooth-numbering/dataset  
+
+# 2. Relative paths to the image folders
+train: train/images  # Required for training
+val: val/images  # Optional, but recommended for validation during training
+test: test/images  # Optional, but recommended for final evaluation
+
+# 3. Number of classes (32 for a full set of permanent teeth)
+nc: 32
+
+# 4. Class Names (Mapped to FDI notation)
+# It is vital that these match the order of your label IDs (0, 1, 2...)
+names:
+  # Canines
+  0: '13'
+  1: '23'
+  2: '33'
+  3: '43'
+  # Central Incisors
+  4: '21'
+  5: '41'
+  6: '31'
+  7: '11'
+  # First Molars
+  8: '16'
+  9: '26'
+  10: '36'
+  11: '46'
+  # First Premolars
+  12: '14'
+  13: '34'
+  14: '44'
+  15: '24'
+  # Lateral Incisors
+  16: '22'
+  17: '32'
+  18: '42'
+  19: '12'
+  # Second Molars
+  20: '17'
+  21: '27'
+  22: '37'
+  23: '47'
+  # Second Premolars
+  24: '15'
+  25: '25'
+  26: '35'
+  27: '45'
+  # Third Molars (Wisdom Teeth)
+  28: '18'
+  29: '28'
+  30: '38'
+  31: '48'
